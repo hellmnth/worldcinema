@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/uil_tv_retro"
+        android:id="@+id/home"
+        android:title="Главная"
+        android:orderInCategory="0"/>
+
+    <item android:icon="@drawable/glyph_2"
+        android:id="@+id/podborka"
+        android:title="Подборка"
+        android:orderInCategory="1"/>
+
+    <item android:icon="@drawable/glyph_1"
+        android:id="@+id/collections"
+        android:title="Коллекции"
+        android:orderInCategory="2"/>
+
+    <item android:icon="@drawable/glyph"
+        android:id="@+id/profile"
+        android:title="Профиль"
+        android:orderInCategory="3"/>
+</menu>
