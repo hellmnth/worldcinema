@@ -16,7 +16,10 @@
         android:usesCleartextTraffic="false"
         tools:targetApi="31">
         <activity
-            android:name=".activity_post"
+            android:name=".postenter"
+            android:exported="false" />
+        <activity
+            android:name=".get_kr_activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -40,7 +43,7 @@
             android:name=".homescreen"
             android:exported="false" />
         <activity
-            android:name=".get_kr_activity"
+            android:name=".activity_post"
             android:exported="true"
             android:theme="@style/Base.Theme.Worldcinema.StatusBar">
             <intent-filter>

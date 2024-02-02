@@ -62,8 +62,8 @@ class MainActivity2 : AppCompatActivity() {
                     } else {
                         deleteAll()
                     }
-            val intent = Intent(this@MainActivity2, UserActivity::class.java)
-                    startActivity(intent)
+            val inten = Intent(this@MainActivity2, UserActivity::class.java)
+                    startActivity(inten)
                     finish()
             } else {
                 Toast.makeText(this, "Такой почты не существует или пароль неверный", Toast.LENGTH_SHORT).show()
