@@ -30,6 +30,7 @@ lateinit var pass:EditText
             log_call.enqueue(object:retrofit2.Callback<data_model1>{
                 override fun onResponse(call: Call<data_model1>, response: Response<data_model1>) {
                     if(response.isSuccessful){
+                        Toast.makeText(this@activity_post, "Работает", Toast.LENGTH_SHORT).show()
                         val int=Intent(this@activity_post, postenter::class.java)
                         startActivity(int)
                         finish()
@@ -39,6 +40,7 @@ lateinit var pass:EditText
                     }
                 }
                 override fun onFailure(call: Call<data_model1>, t: Throwable) {
+                    Toast.makeText(this@activity_post, "xjdghbjdfg", Toast.LENGTH_LONG).show()
                     Toast.makeText(this@activity_post, t.message, Toast.LENGTH_SHORT).show()
                 }})}
         else{

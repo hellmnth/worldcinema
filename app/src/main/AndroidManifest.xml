@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Worldcinema"
-        android:usesCleartextTraffic="false"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".postenter"
@@ -43,7 +43,7 @@
             android:name=".homescreen"
             android:exported="false" />
         <activity
-            android:name=".activity_post"
+            android:name=".get_activity"
             android:exported="true"
             android:theme="@style/Base.Theme.Worldcinema.StatusBar">
             <intent-filter>
@@ -68,7 +68,7 @@
             android:name=".MainActivity3"
             android:exported="false" />
         <activity
-            android:name=".get_activity"
+            android:name=".activity_post"
             android:exported="false" />
     </application>
 
