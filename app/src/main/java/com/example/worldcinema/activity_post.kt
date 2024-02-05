@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import retrofit2.Call
 import retrofit2.Response
-
+var n:String=""
+var e:String=""
+var i:String=""
 class activity_post : AppCompatActivity() {
 lateinit var email:EditText
 lateinit var pass:EditText
@@ -30,8 +33,11 @@ lateinit var pass:EditText
             log_call.enqueue(object:retrofit2.Callback<data_model1>{
                 override fun onResponse(call: Call<data_model1>, response: Response<data_model1>) {
                     if(response.isSuccessful){
+                        n=response.body()?.nickName!!
+                        e=response.body()?.email!!
+                        i=response.body()?.avatar!!
                         Toast.makeText(this@activity_post, "Работает", Toast.LENGTH_SHORT).show()
-                        val int=Intent(this@activity_post, postenter::class.java)
+                        val int=Intent(this@activity_post, UserActivity::class.java)
                         startActivity(int)
                         finish()
                     }

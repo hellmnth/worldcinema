@@ -43,7 +43,7 @@
             android:name=".homescreen"
             android:exported="false" />
         <activity
-            android:name=".get_activity"
+            android:name=".activity_post"
             android:exported="true"
             android:theme="@style/Base.Theme.Worldcinema.StatusBar">
             <intent-filter>
@@ -68,7 +68,7 @@
             android:name=".MainActivity3"
             android:exported="false" />
         <activity
-            android:name=".activity_post"
+            android:name=".get_activity"
             android:exported="false" />
     </application>
 

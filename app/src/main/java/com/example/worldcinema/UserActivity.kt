@@ -5,15 +5,27 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import retrofit2.Call
+import retrofit2.Response
 
 class UserActivity : AppCompatActivity() {
     lateinit var tb1: Toolbar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user)
+        val nick:TextView=findViewById(R.id.nickname)
+        val mail:TextView=findViewById(R.id.mail)
+        val avatar:ImageView=findViewById(R.id.avatar)
+        nick.setText(n)
+        mail.setText(e)
+        Glide.with(applicationContext).load(i).into(avatar)
+
 
         val love_res: RecyclerView =findViewById((R.id.love_view))
         love_res.adapter=love_adapter(this,PosterList().list)
