@@ -27,8 +27,8 @@ class harryadapter(val con:Context, val list: MutableList<harry_model>):Recycler
     }
 
     override fun onBindViewHolder(holder: link3, position: Int) {
-        Glide.with(con).load(list[position].image).into(holder.img)
         holder.name.setText(list[position].character)
         holder.fakul.setText(list[position].hogwartsHouse)
+        Glide.with(con).load(list[position].image).into(holder.img)
     }
 }

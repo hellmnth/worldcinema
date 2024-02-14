@@ -22,7 +22,7 @@
             android:name=".harry_books"
             android:exported="false" />
         <activity
-            android:name=".harry_potter"
+            android:name=".activity_post"
             android:exported="false" />
         <activity
             android:name=".postenter"
@@ -52,7 +52,7 @@
             android:name=".homescreen"
             android:exported="false" />
         <activity
-            android:name=".activity_post"
+            android:name=".harry_potter"
             android:exported="true"
             android:theme="@style/Base.Theme.Worldcinema.StatusBar">
             <intent-filter>
