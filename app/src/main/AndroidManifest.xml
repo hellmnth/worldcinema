@@ -16,6 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".harry_character"
+            android:exported="false" />
+        <activity
+            android:name=".harry_books"
+            android:exported="false" />
+        <activity
+            android:name=".harry_potter"
+            android:exported="false" />
+        <activity
             android:name=".postenter"
             android:exported="false" />
         <activity
